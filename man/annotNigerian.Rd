@@ -13,7 +13,8 @@ Annotation data for the genes forming the table of counts in
 \usage{data(annotNigerian)}
 \format{
   
-  'Symbol': gene symbols for the genes in the initial table of counts \code{\link{countsNigerian}}.
+  'Symbol': gene symbols for the genes in the initial table of counts
+  \code{\link{countsNigerian}}.
 }
 
 \details{
