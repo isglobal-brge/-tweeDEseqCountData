@@ -4,7 +4,13 @@
 \title{RNA-seq count data employed in the vignette of the tweeDEseq package
 }
 \description{
-Initial and normalized count data from the RNA-seq experiment by Pickrell et al. (2010) on lymphoblastoid cell lines derived from 69 unrelated Nigerian individuals. These two count data tables are employed in the vignette of the \code{tweeDEseq} package and its assessment as a method for detecting differential expression (Esnaola et al., \emph{submitted}).
+RNA-seq tables of counts employed in the vignette of the \code{tweeDEseq} package
+(Esnaola et al., submitted). These three data sets were downloaded from the
+ReCount repository at \url{http://bowtie-bio.sourceforge.net/recount} and contain
+tables of counts from RNA-seq experiments by Cheung et al. (2010), Montgomery et
+al. (2010) and Pickrell et al. (2010). The raw RNA-seq data was pre-processed
+according to the procedures described by Frazee et al. (2011). Please check the
+individual help pages of each data set for further details.
 }
 
 %\format{
@@ -13,9 +19,21 @@ Initial and normalized count data from the RNA-seq experiment by Pickrell et al.
   
 %}
 \source{
-  J.K. Pickrell, J.C. Marioni, A.A Pai, J.F. Degner, B.E. Engelhardt,
-  E. Nkadori, J.B Veyrieras, M. Stephens, Y. Gilad, and J.K. Pritchard.
-  \emph{Nature}, 464:768-772, 2010.
+V.G. Cheung, R.R. Nayak, I.X. Wang, S. Elwyn, S.M. Cousins, M. Morley
+and R.S. Spielman. \emph{Plos Biology}, 8(9), pii:e1000480, 2010.
+
+A.C. Frazee, B. Langmead and J.T. Leek. ReCount: a multi-experiment
+resource of analysis-ready RNA-seq gene count datasets.
+\emph{BMC Bioinformatics}, 12:449, 2011.
+
+S.B. Montgomery, M. Sammeth, M. Gutierrez-Arcelus, R.P. Lach, C. Ingle,
+J. Nisbett, R. Guigo and E.T. Dermitzakis. Transcriptome genetics using
+second generation sequencing in a Caucasian population.
+\emph{Nature}, 464:773-777, 2010.
+
+J.K. Pickrell, J.C. Marioni, A.A Pai, J.F. Degner, B.E. Engelhardt,
+E. Nkadori, J.B Veyrieras, M. Stephens, Y. Gilad, and J.K. Pritchard.
+\emph{Nature}, 464:768-772, 2010.
 }
 
 \references{
@@ -24,18 +42,13 @@ Initial and normalized count data from the RNA-seq experiment by Pickrell et al.
   experiments with extensive replication, \emph{submitted}.
 }
 \seealso{
-  \code{\link{annotNigerian}}
-  \code{\link{countsNigerian}}
-  \code{\link{countsNigerianNorm}}
-  \code{\link{genderGenesNigerian}}
-  \code{\link{hkGenesNigerian}}
+  \code{\link{annotEnsembl63}}    
+  \code{\link{cheung}}    
+  \code{\link{montgomery}}    
+  \code{\link{pickrell}}    
+  \code{\link{genderGenes}}
+  \code{\link{hkGenes}}
  }
-\examples{
-data(countsNigerian)
-dim(countsNigerian)
-data(countsNigerianNorm)
-dim(countsNigerianNorm)
-data(genderNigerian)
-table(genderNigerian)
-}
+%%\examples{
+%%}
 \keyword{datasets}

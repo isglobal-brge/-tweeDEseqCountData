@@ -1,37 +1,37 @@
-\name{genderGenesNigerian}
+\name{genderGenes}
+\alias{genderGenes}
 \alias{msYgenes}
 \alias{XiEgenes}
-\alias{genderGenesNigerian}
 
 \docType{data}
 \title{
 Genes with documented sex-specific expression
 }
 \description{
-Genes with documented sex-specific expression and occurring within the set of genes that form the initial table of counts \code{\link{countsNigerian}} pre-processed from the RNA-seq experiment by Pickrell et al. (2010) on lymphoblastoid cell lines derived from 69 unrelated Nigerian individuals.
+Genes with documented sex-specific expression and occurring within the set of
+genes that form the tables of counts in \code{\link{pickrell.eset}},
+\code{\link{montgomery.eset}} and \code{\link{cheung.eset}}.
 }
-\usage{data(genderGenesNigerian)}
+\usage{data(genderGenes)}
 \format{
   
-  'msYgenes': Ensembl gene identifiers from genes in the initial table of counts \code{\link{countsNigerian}} and belonging to the male-specific region of chromosome Y (Skaletsky et al., 2003).
+  \code{msYgenes}: Ensembl gene identifiers from genes belonging to the
+                    male-specific region of chromosome Y (Skaletsky et al., 2003).
 
-  'XiEgenes': Ensembl gene identifiers from genes in the initial table of counts \code{\link{countsNigerian}}, located in the X chromosome and which have been reported to escape X-inactivation.
+  \code{XiEgenes}: Ensembl gene identifiers from genes located in the X chromosome
+                   and which have been reported to escape X-inactivation.
 }
 
 \details{
 These two lists of genes form a gold-standard set of genes with documented sex-specific
 expression which have been employed in the assessment of the method for differential
 expression analysis implemented in the \code{tweeDEseq} package
-(Esnaola et al., \emph{submitted}). Both gene lists are restricted to genes occuring in
-the initial table of counts obtained after pre-processing the RNA-seq data from
-Pickrell et al. (2010), as described in Esnaola et al., \emph{submitted}.
+(Esnaola et al., \emph{submitted}). Both gene lists are restricted to genes occuring
+within the set of genes that form the tables of counts in \code{\link{pickrell.eset}},
+\code{\link{montgomery.eset}} and \code{\link{cheung.eset}}.
 }
 
 \source{
-J.K. Pickrell, J.C. Marioni, A.A Pai, J.F. Degner, B.E. Engelhardt,
-E. Nkadori, J.B Veyrieras, M. Stephens, Y. Gilad, and J.K. Pritchard.
-\emph{Nature}, 464:768--772, 2010.
-
 H.S. Skaletsky, T. Kuroda-Kawaguchi, P.J. Minx, H.S. Cordum, L. Hillier,
 L.G. Brown, S. Repping, T. Pyntikova, J. Ali, T. Bieri, A. Chinwalla,
 A. Delehaunty, K. Delehaunty, H. Du, G. Fewell, L. Fulton, T. Graves,
@@ -52,11 +52,15 @@ variability in X-linked gene expression in females.
   experiments with extensive replication. Submitted.
 }
 \seealso{
-  \code{\link{countsNigerian}}
-  \code{\link{annotNigerian}}
+  \code{\link{annotEnsembl63}}    
+  \code{\link{pickrell}}    
+  \code{\link{pickrellNorm}}    
+  \code{\link{montgomery}}    
+  \code{\link{hkGenes}}
   }
+
 \examples{
-data(genderGenesNigerian)
+data(genderGenes)
 length(msYgenes)
 length(XiEgenes)
 }
