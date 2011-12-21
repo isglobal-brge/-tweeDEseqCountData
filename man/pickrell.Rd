@@ -3,6 +3,10 @@
 \alias{pickrellNorm}
 \alias{pickrell.eset}
 \alias{pickrellNorm.eset}
+\alias{pickrell1}
+\alias{pickrell1Norm}
+\alias{pickrell1.eset}
+\alias{pickrell1Norm.eset}
 
 \docType{data}
 \title{
@@ -12,12 +16,16 @@ RNA-seq count data from Pickrell et al. (2010)
 \code{ExpressionSet} objects containing RNA-seq count data from lymphoblastoid
 cell lines from 69 unrelated Nigerian individuals. These count data are employed
 in the vignette of the package \code{tweeDEseq} Esnaola et al. (submitted). The
-original experimental data was published by Pickrell et al. (2010) and the table
+original experimental data was published by Pickrell et al. (2010). The table
 of counts in \code{pickrell.eset} corresponds to the one in the
 ReCount repository available at \url{http://bowtie-bio.sourceforge.net/recount}.
 Details on the pre-processing steps to obtain this table of counts from the raw
 reads of Pickrell et al. (2010) are provided on that website and in the
 publication by Frazee et al. (2011). The other object \code{pickrellNorm.eset}
+contains the corresponding filtered and normalized table of counts.
+
+The table of counts in \code{pickrell1.eset} was obtained by Esnaola et al. (2010)
+by the pre-processing steps described on that article and \code{pickrell1Norm.eset}
 contains the corresponding filtered and normalized table of counts.
 }
 \usage{
@@ -31,16 +39,22 @@ data(pickrell)
   \code{pickrellNorm.eset}: \code{ExpressionSet} object containing filtered
                             and normalized read counts for 10,231 Ensembl
                             genes for each of the 69 Nigerian individuals.
+  \code{pickrell1.eset}: \code{ExpressionSet} object containing read counts
+                         for 38,415 Ensembl genes for each of the 69 Nigerian
+                         individuals.
+  \code{pickrell1Norm.eset}: \code{ExpressionSet} object containing filtered
+                             and normalized read counts for 22,060 Ensembl
+                             genes for each of the 69 Nigerian individuals.
 }
 
 \details{
-These tables of counts are stored in the \code{AssayData} slot of the
-\code{ExpressionSet} objects called \code{pickrell.eset} and \code{pickrellNorm.eset}
-whose phenotypic data contains the gender of each individual, among other bits
-of information. The filtered and normalized table of counts was obtained from
-the raw counts in \code{pickrell.eset} by first removing genes with less than
-0.5 cpm (counts per million reads) in all samples but one and then applying
-the conditinal quantile normalization procedure by Hansen et al. (2011).
+These tables of counts are stored in the \code{AssayData} slot of the previously
+enumerated \code{ExpressionSet} objects whose phenotypic data contains the gender
+of each individual, among other bits of information. The filtered and normalized
+table of counts was obtained from the raw counts in \code{pickrell.eset} and
+\code{pickrell1.eset} by first removing genes with less than 0.5 cpm (counts per
+million reads) in all samples but one and then applying the conditional quantile
+normalization procedure by Hansen et al. (2011).
 }
 
 \source{
