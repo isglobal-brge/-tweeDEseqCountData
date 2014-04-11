@@ -1,6 +1,6 @@
 Package: tweeDEseqCountData
 Title: RNA-seq count data employed in the vignette of the tweeDEseq package
-Version: 1.0.11
+Version: 1.2.0
 Depends: Biobase, R (>= 2.10)
 Author: Juan R Gonzalez <jrgonzalez@creal.cat> and Mikel Esnaola <mesnaola@creal.cat> (with contributions from Robert Castelo <robert.castelo@upf.edu>)
 Maintainer: Juan R Gonzalez <jrgonzalez@creal.cat>
