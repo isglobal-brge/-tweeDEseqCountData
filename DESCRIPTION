@@ -1,7 +1,9 @@
 Package: tweeDEseqCountData
 Title: RNA-seq count data employed in the vignette of the tweeDEseq package
+Description: RNA-seq count data from Pickrell et al. (2010) employed to 
+    illustrate the use of the Poisson-Tweedie family of distributions with 
+    the tweeDEseq package.
 Version: 1.38.1
-Depends: Biobase, R (>= 4.3.0)
 Authors@R: 
     c(person("Dolors", "Pelegri-Siso", ,"dolors.pelegri@isglobal.org",
              role = c("aut", "cre"),comment = c(ORCID = "0000-0002-5993-3003")),
@@ -9,11 +11,21 @@ Authors@R:
              role = "aut", comment = c(ORCID = "0000-0003-3267-2146")),
       person("Mikel", "Esnaola", ,"mesnaola@creal.cat", role = "aut"),
       person("Robert", "Castelo", ,"robert.castelo@upf.edu", role = "aut"))
-Description: RNA-seq count data from Pickrell et al. (2010) employed to illustrate
-the use of the Poisson-Tweedie family of distributions with the tweeDEseq package.
-biocViews: Genome, Homo_sapiens_Data, RNASeqData
-License: GPL (>=2)
+Depends: 
+    Biobase, 
+    R (>= 4.3.0)
+biocViews: 
+    Genome,
+    Homo_sapiens_Data,
+    RNASeqData
+Suggests: 
+	knitr,
+	BiocStyle,
+	rmarkdown
+License: MIT + file LICENSE
 Encoding: UTF-8
+RoxygenNote: 7.1.2
+VignetteBuilder: knitr
 LazyLoad: yes
-URL: https://github.com/isglobal-brge/tweeDEseqCountData/
 BugReports: https://github.com/isglobal-brge/tweeDEseqCountData/issues
+URL: https://github.com/isglobal-brge/tweeDEseqCountData/

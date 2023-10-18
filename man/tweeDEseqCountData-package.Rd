@@ -12,6 +12,9 @@ al. (2010) and Pickrell et al. (2010). The raw RNA-seq data was pre-processed
 according to the procedures described by Frazee et al. (2011). Please check the
 individual help pages of each data set for further details.
 }
+\value{
+void
+}
 
 %\format{
 %}

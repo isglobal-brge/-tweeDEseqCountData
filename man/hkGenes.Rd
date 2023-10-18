@@ -12,6 +12,9 @@ the set of genes that form the tables of counts in \code{\link{pickrell.eset}},
 package.
 }
 \usage{data(hkGenes)}
+\value{
+hkGenes dataset
+}
 \format{
   
   \code{hkGenes}: Ensembl gene identifiers from the list of housekeeping genes
