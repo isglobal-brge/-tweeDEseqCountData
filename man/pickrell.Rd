@@ -31,6 +31,9 @@ contains the corresponding filtered and normalized table of counts.
 \usage{
 data(pickrell)
 }
+\value{
+pickrell dataset
+}
 \format{
   
   \code{pickrell.eset}: \code{ExpressionSet} object containing read counts

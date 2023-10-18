@@ -20,6 +20,9 @@ steps to obtain this table of counts from the raw reads of Montgomery et al.
 \usage{
 data(montgomery)
 }
+\value{
+montgomery dataset
+}
 \format{
   
   \code{montgomery.eset}: \code{ExpressionSet} object containing read counts

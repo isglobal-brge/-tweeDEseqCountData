@@ -12,6 +12,9 @@ Annotation data for the human genes forming the tables of counts in
 \code{\link{cheung.eset}}.
 }
 \usage{data(annotEnsembl63)}
+\value{
+annotEnsembl63 dataset
+}
 \format{
   
   \code{Symbol}: gene symbol according to the HUGO Gene Nomenclature Committee (HGNC).

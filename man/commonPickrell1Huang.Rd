@@ -29,6 +29,9 @@ matrices, thus being a subset of the former.
 \usage{
 data(commonPickrell1Huang)
 }
+\value{
+commonPickrell1Huang dataset
+}
 \format{
   
   \code{huangArrayRMAnoBatchCommonSamples.eset}: \code{ExpressionSet} object containing filtered,

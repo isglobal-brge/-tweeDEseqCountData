@@ -13,6 +13,9 @@ genes that form the tables of counts in \code{\link{pickrell.eset}},
 \code{\link{montgomery.eset}} and \code{\link{cheung.eset}}.
 }
 \usage{data(genderGenes)}
+\value{
+genderGenes dataset
+}
 \format{
   
   \code{msYgenes}: Ensembl gene identifiers from genes belonging to the

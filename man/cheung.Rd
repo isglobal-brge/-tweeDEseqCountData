@@ -20,6 +20,9 @@ steps to obtain this table of counts from the raw reads of Cheung et al.
 \usage{
 data(cheung)
 }
+\value{
+cheung dataset
+}
 \format{
   
   \code{cheung.eset}: \code{ExpressionSet} object containing read counts
